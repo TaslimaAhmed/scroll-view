@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="scrollViewApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bi" translatesAutoresizingMaskIntoConstraints="NO" id="XNK-At-LNh">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                            </imageView>
+                            <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="4" translatesAutoresizingMaskIntoConstraints="NO" id="TNt-Jf-aY3">
+                                <rect key="frame" x="137.5" y="577" width="100" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="ncZ-fD-GNp"/>
+                                    <constraint firstAttribute="height" constant="40" id="t2f-B9-ESv"/>
+                                </constraints>
+                                <color key="pageIndicatorTintColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="currentPageIndicatorTintColor" red="0.83245628240000002" green="0.24648281380185463" blue="0.16552918023209848" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </pageControl>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9xf-4r-79D">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="XNK-At-LNh" secondAttribute="trailing" id="Geg-xB-SV6"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="TNt-Jf-aY3" secondAttribute="bottom" constant="50" id="J2u-rN-qaH"/>
+                            <constraint firstAttribute="trailing" secondItem="9xf-4r-79D" secondAttribute="trailing" id="K9E-5L-LCb"/>
+                            <constraint firstItem="XNK-At-LNh" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="KJe-3h-T80"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="9xf-4r-79D" secondAttribute="bottom" id="KTj-wH-PHP"/>
+                            <constraint firstItem="9xf-4r-79D" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="T6T-6i-9Mo"/>
+                            <constraint firstItem="XNK-At-LNh" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="ZLD-pY-gth"/>
+                            <constraint firstItem="TNt-Jf-aY3" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="gbS-TR-Dln"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="XNK-At-LNh" secondAttribute="bottom" id="vVv-tu-7i4"/>
+                            <constraint firstItem="9xf-4r-79D" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="zs3-Td-AR4"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="pageControll" destination="TNt-Jf-aY3" id="mWU-Wq-HSm"/>
+                        <outlet property="scrollView" destination="9xf-4r-79D" id="wpD-FJ-TfJ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="117.59999999999999" y="122.78860569715144"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="bi" width="112" height="112"/>
+    </resources>
+</document>
